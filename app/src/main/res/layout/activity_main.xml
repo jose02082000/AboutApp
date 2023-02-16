@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingStart="12dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewName"
+        style="@style/nameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200" />
+
+    <EditText
+        android:id="@+id/editTextNickName"
+        style="@style/nameStyle"
+        android:layout_width="match_parent"
+        android:background="@color/blacking"
+        android:layout_height="wrap_content"
+        android:hint="¿Cual es tu nombre?"
+        android:text=""
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Hecho" />
+
+    <TextView
+        android:id="@+id/tvNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        style="@style/nameStyle"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textColor="@color/purple_200"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/starImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="YellowStar"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ScrollView
+        android:id="@+id/bioScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_insert_emoticon_24" />
+
+            <TextView
+                android:id="@+id/bioText"
+                style="@style/nameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/bio"
+                android:textColor="@color/purple_200" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
